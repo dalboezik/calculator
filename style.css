@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(65, 65, 65);
+}
+
+.wrapper {
+  width: 50%;
+  min-width: 95px;
+  max-width: 500px;
+  background-color: rgb(87, 87, 87);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.buttons__wrapper {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.buttons__wrapper button {
+  width: 10vw;
+  max-width: 70px;
+  min-width: 20px;
+  height: 6vh;
+  min-height: 36px;
+
+  font-size: 30px;
+  font-family: "Silkscreen", sans-serif;
+
+  border: none;
+  border-radius: 5px;
+  margin: 3px 0;
+  background-color: rgb(105, 105, 105);
+  transition: all 0.2s ease;
+}
+
+.buttons__wrapper button:hover {
+  cursor: pointer;
+  background-color: rgb(92, 92, 92);
+  color: rgb(28, 49, 119);
+}
+
+.buttons__wrapper .darkButton:hover {
+  color: black;
+}
+
+.buttons__wrapper .darkButton {
+  background-color: rgb(73, 73, 73);
+  color: rgb(28, 49, 119);
+}
+
+#resultArea {
+  background-color: rgb(105, 105, 105);
+  height: 6vh;
+  min-height: 39px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 20px;
+  margin: 0 auto 15px auto;
+  font-size: clamp(8px, 2vw, 25px);
+  font-family: "Press Start 2P", system-ui;
+  color: rgb(28, 49, 119);
+  width: 95%;
+}
+
+#resultArea span {
+  color: black;
+}

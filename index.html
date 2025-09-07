@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="resultArea"></div>
+      <div class="buttons__wrapper">
+        <div class="buttons">
+          <button class="darkButton" onclick="add('(', this)">(</button>
+          <button class="darkButton" onclick="add(')', this)">)</button>
+          <button class="darkButton" onclick="add('%', this)">%</button>
+          <button class="darkButton" onclick="ac()">ac</button>
+        </div>
+        <div class="buttons">
+          <button onclick="add(7, this)">7</button>
+          <button onclick="add(8, this)">8</button>
+          <button onclick="add(9, this)">9</button>
+          <button class="darkButton" onclick="add('÷', this)">÷</button>
+        </div>
+        <div class="buttons">
+          <button onclick="add(4, this)">4</button>
+          <button onclick="add(5, this)">5</button>
+          <button onclick="add(6, this)">6</button>
+          <button class="darkButton" onclick="add('×', this)">×</button>
+        </div>
+        <div class="buttons">
+          <button onclick="add(1, this)">1</button>
+          <button onclick="add(2, this)">2</button>
+          <button onclick="add(3, this)">3</button>
+          <button class="darkButton" onclick="add('-', this)">-</button>
+        </div>
+        <div class="buttons">
+          <button onclick="add(0, this)">0</button>
+          <button onclick="add('.', this)">.</button>
+          <button onclick="equal()">=</button>
+          <button class="darkButton" onclick="add('+', this)">+</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
